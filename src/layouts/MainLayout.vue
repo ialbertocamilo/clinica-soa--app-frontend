@@ -2,6 +2,7 @@
   <q-layout view="lHh Lpr fff" class="bg-grey-1">
     <q-header elevated class="bg-white text-grey-8" height-hint="64">
       <q-toolbar class="GPL__toolbar" style="height: 64px">
+<!--
         <q-btn
           flat
           dense
@@ -33,11 +34,12 @@
         </q-btn>
 
         <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="primary" icon="cloud_upload" no-caps label="Upload" class="q-ml-sm q-px-md" />
-
+-->
         <q-space />
 
         <div class="q-gutter-sm row items-center no-wrap">
-          <q-btn round dense flat color="text-grey-7" icon="apps">
+<!--
+            <q-btn round dense flat color="text-grey-7" icon="apps">
             <q-tooltip>Google Apps</q-tooltip>
           </q-btn>
           <q-btn round dense flat color="grey-8" icon="notifications">
@@ -46,6 +48,7 @@
             </q-badge>
             <q-tooltip>Notifications</q-tooltip>
           </q-btn>
+-->
           <q-btn round flat>
             <q-avatar size="26px">
               <img src="https://cdn.quasar.dev/img/boy-avatar.png">
@@ -99,20 +102,23 @@
             <div class="GPL__side-btn__label">Pacientes</div>
           </q-btn>
 
-          <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn">
+         
+          <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn" @click="$router.push({name:'users-list'})">
+            <i class="fas fa-users"></i>
+            <div class="GPL__side-btn__label">Doctores</div>
+            <q-badge floating color="red" text-color="white" style="top: 8px; right: 16px">
+              1
+            </q-badge>
+          </q-btn>
+
+           <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn" @click="$router.push({name:'medicines-list'})">
             <i class="fas fa-capsules"></i>
             <div class="GPL__side-btn__label">Medicinas</div>
             <q-badge floating color="red" text-color="white" style="top: 8px; right: 16px">
               1
             </q-badge>
           </q-btn>
-          <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn">
-            <i class="fas fa-users"></i>
-            <div class="GPL__side-btn__label">Usuarios</div>
-            <q-badge floating color="red" text-color="white" style="top: 8px; right: 16px">
-              1
-            </q-badge>
-          </q-btn>
+          
           <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn">
             <i class="fas fa-clipboard-list"></i>
             <div class="GPL__side-btn__label">Citas</div>

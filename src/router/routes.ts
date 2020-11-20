@@ -25,6 +25,31 @@ const routes: RouteConfig[] = [
         name:'add-patient',
         component: () => import( 'pages/patient/Create.vue')
       },
+      {
+        path:'/medicines/list/',
+        name:'medicines-list',
+        component: () => import( 'pages/medicines/List.vue')
+      },
+      {
+        path:'/medicines/new',
+        name:'add-medicines',
+        component: () => import( 'pages/medicines/Create.vue')
+      },
+      {
+        path:'/users/list/',
+        name:'users-list',
+        component: () => import( 'pages/users/List.vue')
+      },
+      {
+        path:'/users/view/:id',
+        name:'view-users',
+        component: () => import( 'pages/users/View.vue')
+      },
+      {
+        path:'/users/new',
+        name:'add-users',
+        component: () => import( 'pages/users/Create.vue')
+      },
     ]
   },
   {
