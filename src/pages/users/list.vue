@@ -7,7 +7,7 @@
       :columns="columns"
       row-key="id"
       selection="single"
-      :selected.sync="selected"
+      
       :filter="filter"
       :loading="loading"
     >
