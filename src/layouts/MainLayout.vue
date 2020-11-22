@@ -106,17 +106,13 @@
           <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn" @click="$router.push({name:'users-list'})">
             <i class="fas fa-users"></i>
             <div class="GPL__side-btn__label">Doctores</div>
-            <q-badge floating color="red" text-color="white" style="top: 8px; right: 16px">
-              1
-            </q-badge>
+
           </q-btn>
 
            <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn" @click="$router.push({name:'medicines-list'})">
             <i class="fas fa-capsules"></i>
             <div class="GPL__side-btn__label">Medicinas</div>
-            <q-badge floating color="red" text-color="white" style="top: 8px; right: 16px">
-              1
-            </q-badge>
+
           </q-btn>
           
           <q-btn round flat color="grey-8" stack no-caps size="26px" class="GPL__side-btn">
